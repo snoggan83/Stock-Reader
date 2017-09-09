@@ -1,0 +1,54 @@
+function ProcOptimize
+% -------------------------------------------
+% function ProcOptimize
+% Optimizing parameters in ProcessStrat
+%
+% John Nilsson, 2015-11-21
+% ------------------------------------------
+
+% --- Setting Initial Conditions of Solver ---
+x0(1) = 22.9944;            % Setting Low RSI 
+x0(2) = 90.8223;            % Setting High RSI 
+x0(3) = 0.8142;             % Setting procentage stop-loss
+
+% --- Setting options for optimization routine ---
+options = optimset('Display','iter','TolFun',1e-4,'TolX',1e-4);                                           
+
+% --- Executing newton solver ---
+[x,fval] = fminsearch(@ProcessStrat,x0,options);                                               
+
+x
+
+% 
+% indicate =
+% 
+%   974.0191
+% 
+%     32          100          974.019         shrink
+%  
+% Optimization terminated:
+%  the current x satisfies the termination criteria using OPTIONS.TolX of 1.000000e-004 
+%  and F(X) satisfies the convergence criteria using OPTIONS.TolFun of 1.000000e-004 
+% 
+% 
+% x =
+% 
+%    22.9618   90.9843    0.8142
+
+
+
+indicate =
+
+  971.5259
+
+    37          102          971.526         shrink
+ 
+Optimization terminated:
+ the current x satisfies the termination criteria using OPTIONS.TolX of 1.000000e-004 
+ and F(X) satisfies the convergence criteria using OPTIONS.TolFun of 1.000000e-004 
+
+
+x =
+
+   26.3560   88.3907    0.7660
+

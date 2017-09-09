@@ -1,0 +1,47 @@
+function list = GetCommodities(tag)
+% -----------------------------------------------
+% function list = GetCommodities(tag)
+%
+% Input - tag       (tag list of commodoties) 
+%
+% Output - list     (list of commodities)
+%
+% Author: John Nilsson, 2015-12-06
+% -----------------------------------------------
+
+if strcmp(tag,'Commodoties')
+    list =   {'Not Avilible' '2327059'  'Brent Oil';
+              'Not Avilible' '2327121'  'Gold';
+              'Not Avilible' '2327129'  'Palladium';
+              'Not Avilible' '2327137'  'Platinum';
+              'Not Avilible' '2327086'  'WTE Oil';
+              'Not Avilible' '5827489'  'Aluminium Alloy';
+              'Not Avilible' '5828168'  'Aluminium';
+              'Not Avilible' '5829283'  'Copper';
+              'Not Avilible' '5830303'  'NAASAC';
+              'Not Avilible' '5830903'  'Nickel';
+              'Not Avilible' '5831649'  'Lead';
+              'Not Avilible' '5832346'  'Tin';
+              'Not Avilible' '5832888'  'Zink'};
+end
+              
+              
+                                
+                                
+             'Not Avilible' '29880'   'FTSE 100';           % UK index
+             'Not Avilible' '5514295' 'DAX 30';             % German Index
+             'Not Avilible' '6313776' 'OMX C20 CAP';        % Danish Index
+             'Not Avilible' '479776'  'OMX Stockholm 30';   % Swedish Index
+             'Not Avilible' '340348'  'OSEBX';              % Norwegian Index
+             'Not Avilible' '342989'  'BEL 20 Index';       % Belgian Index
+             'Not Avilible' '555407'  'IBEX 35';            % Spanish Index
+             'Not Avilible' '592296'  'OMX Helsinki 25';    % Finnish Index
+             'Not Avilible' '489956'  'CAC40';              % French Index
+             'Not Avilible' '4038001' 'FTSE MIB';           % Italia Index
+             'Not Avilible' '4038001' 'OMX Helsinki 25';    % Finnish Index
+             
+             
+             
+             
+             342989
+             };       % index        
